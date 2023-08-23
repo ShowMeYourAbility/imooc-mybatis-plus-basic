@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>imooc-mybatis-plus-basic-environment</module>
+        <module>imooc-mybatis-plus-basic-insert</module>
     </modules>
 
     <properties>

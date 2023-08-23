@@ -14,6 +14,5 @@ spring:
 # Logger Config
 logging:
   level:
-#    com.llmcu.imooc.mybatisplus.basic.environment: debug
     com.llmcu.imooc.mybatisplus.basic: debug
 
