@@ -10,6 +10,7 @@
     <modules>
         <module>imooc-mybatis-plus-basic-environment</module>
         <module>imooc-mybatis-plus-basic-insert</module>
+        <module>imooc-mybatis-plus-basic-query</module>
     </modules>
 
     <properties>
