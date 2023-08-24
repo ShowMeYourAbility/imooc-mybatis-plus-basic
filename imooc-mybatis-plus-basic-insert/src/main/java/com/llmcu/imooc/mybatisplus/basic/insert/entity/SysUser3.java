@@ -1,11 +1,10 @@
 package com.llmcu.imooc.mybatisplus.basic.insert.entity;
 
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 /**
- * 仅主键不同
+ * 仅主键不符合驼峰标识转换
  */
 @Data
 public class SysUser3 {

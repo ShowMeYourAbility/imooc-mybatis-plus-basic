@@ -1,5 +1,6 @@
 package com.llmcu.imooc.mybatisplus.basic.insert.mapper;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.llmcu.imooc.mybatisplus.basic.insert.entity.SysUser3;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -18,7 +19,7 @@ public class SysUserMapper3Test {
     private SysUserMapper3 sysUserMapper3;
 
     /**
-     * 新增{@link com.baomidou.mybatisplus.annotation.TableName}后才能正常查询
+     * 新增{@link TableId}后才能正常查询
      */
     @Test
     @Rollback
@@ -31,13 +32,13 @@ public class SysUserMapper3Test {
 
 
     /**
-     * 新增{@link com.baomidou.mybatisplus.annotation.TableName}后才能正常插入
+     * 新增{@link TableId}后才能正常插入
      */
     @Test
     @Rollback
     public void insert() {
-//        SysUser3 sysUser = new SysUser3().setUserId(433L).setName("dg").setAge(35).setEmail("2848421@qq.com");
-        SysUser3 sysUser = new SysUser3().setName("dg").setAge(35).setEmail("2848421@qq.com");
+        // id为null时，也会insert此字段，普通字段为null时，不会insert此字段
+        SysUser3 sysUser = new SysUser3().setName("dg").setEmail("2848421@qq.com");
         int insert = sysUserMapper3.insert(sysUser);
         Assertions.assertEquals(1, insert);
     }

@@ -4,13 +4,14 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 
 /**
- * 仅普通字段不符合驼峰标识转换
+ * 多了一个remark字段，少了一个name字段
  */
 @Data
-public class SysUser4 {
+public class SysUser5 {
     private Long id;
-    @TableField("name")
-    private String userName;
+    //    private String name;
     private Integer age;
     private String email;
+    @TableField(exist = false)
+    private String remark;
 }

@@ -22,6 +22,8 @@ public class SysUserMapperTest {
     public void select() {
         List<SysUser> userList = sysUserMapper.selectList(null);
         Assertions.assertEquals(5, userList.size());
+        SysUser user = new SysUser().setName("liuling").setAge(1);
+        System.out.println(user);
         userList.forEach(System.out::println);
     }
 

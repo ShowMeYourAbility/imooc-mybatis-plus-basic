@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 /**
- * 仅表名不符合驼峰标识
+ * 仅表名与实体类名不符合驼峰标识转换
  */
 @Data
 @TableName("system_user")
