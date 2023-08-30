@@ -47,7 +47,7 @@ public class SysUserServiceBatchTest {
 
 
     /**
-     * @TableField(fill= FieldFill.INSERT)自动填充策略没设置时，执行的是delete语句
+     * @TableLogic 逻辑删除字段没设置时，执行的是delete语句
      * DELETE FROM sys_user WHERE id=?
      */
     @Test
