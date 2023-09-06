@@ -24,3 +24,5 @@ mybatis-plus-boot-starter和mybatis-spring-boot-starter都实现了自动配置`
 3. 是不是有这么一个猜想呢：SqlSessionFactory等作为一个spring容器中的一个bean,它为什么能实现不同的查询呢？不就是在项目启动时将这些实现纳入管理了嘛
 
 @Mapper和@MapperScanner二者取其一即可，原理是什么呢？
+
+@MapperScanner对jar包中Mapper是否能扫描到？试验下

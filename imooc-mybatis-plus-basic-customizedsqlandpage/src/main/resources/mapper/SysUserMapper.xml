@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.llmcu.imooc.mybatisplus.basic.environment.mapper.SysUserMapper">
+
+    <resultMap id="BaseResultMap" type="com.llmcu.imooc.mybatisplus.basic.environment.entity.SysUser">
+            <id property="id" column="ID" jdbcType="BIGINT"/>
+            <result property="name" column="NAME" jdbcType="VARCHAR"/>
+            <result property="age" column="AGE" jdbcType="OTHER"/>
+            <result property="email" column="EMAIL" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ID,NAME,AGE,
+        EMAIL
+    </sql>
+    <select id="selectAll2" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_user
+        ${ew.customSqlSegment}
+    </select>
+    <select id="selectAllById" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_user
+        where
+        ID > #{id,jdbcType=NUMERIC}
+    </select>
+
+
+
+</mapper>

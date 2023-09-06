@@ -11,9 +11,11 @@
         <module>imooc-mybatis-plus-basic-environment</module>
         <module>imooc-mybatis-plus-basic-insert</module>
         <module>imooc-mybatis-plus-basic-query</module>
+        <module>imooc-mybatis-plus-basic-customizedsqlandpage</module>
         <module>imooc-mybatis-plus-basic-deleteandupdate</module>
 
         <module>imooc-mybatis-plus-basic-generalservice</module>
+        <module>imooc-mybatis-plus-basic-mybatisxplugin</module>
     </modules>
 
     <properties>
