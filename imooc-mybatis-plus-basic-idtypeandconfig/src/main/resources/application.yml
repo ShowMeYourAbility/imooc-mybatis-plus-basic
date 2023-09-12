@@ -17,3 +17,8 @@ logging:
 #    com.llmcu.imooc.mybatisplus.basic.environment: debug
     com.llmcu.imooc.mybatisplus.basic: debug
 
+# 修改默认全局id-type后，跟随全局的就会出问题
+#mybatis-plus:
+#  global-config:
+#    db-config:
+#      id-type: auto

@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class SysUser05 {
     @TableId(type = IdType.ASSIGN_UUID)
-    private Long id;
+    private String id;
     private String name;
     private Integer age;
     private String email;

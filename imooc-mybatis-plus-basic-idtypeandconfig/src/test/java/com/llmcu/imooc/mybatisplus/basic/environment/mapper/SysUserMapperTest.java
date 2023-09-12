@@ -18,11 +18,8 @@ public class SysUserMapperTest {
     private SysUserMapper sysUserMapper;
 
     /**
-     * (1, 'Jone', 18, 'test1@baomidou.com'),
-     * (2, 'Jack', 20, 'test2@baomidou.com'),
-     * (3, 'Tom', 28, 'test3@baomidou.com'),
-     * (4, 'Sandy', 21, 'test4@baomidou.com'),
-     * (5, 'Billie', 24, 'test5@baomidou.com');
+     * Preparing: INSERT INTO sys_user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+     * Parameters: 1701470553699180546(Long), Jone(String), 18(Integer), test1@baomidou.com(String)
      */
     @Test
     @Rollback
