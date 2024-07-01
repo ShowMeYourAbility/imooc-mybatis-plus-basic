@@ -13,5 +13,6 @@
 4. type = IdType.ASSIGN_ID：数字型雪花算法id
 5. type = IdType.ASSIGN_UUID：字符型雪花算法id
 # 注意
-1. 
+1. type = IdType.INPUT: 必须搭配@KeySequence和自定义KeyGenerator一起使用
+2. 自定义ID生成器IdentifierGenerator用于需要自己实现ID生成策略时，不再使用默认的DefaultIdentifierGenerator。即使用场景为IdType.ASSIGN_ID和IdType.NONE的场景
 # 问题
