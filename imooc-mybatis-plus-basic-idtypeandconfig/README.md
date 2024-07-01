@@ -15,4 +15,5 @@
 # 注意
 1. type = IdType.INPUT: 必须搭配@KeySequence和自定义KeyGenerator一起使用
 2. 自定义ID生成器IdentifierGenerator用于需要自己实现ID生成策略时，不再使用默认的DefaultIdentifierGenerator。即使用场景为IdType.ASSIGN_ID和IdType.NONE的场景
+3. 不要直接使用DefaultIdentifierGenerator，而是使用封装好的工具类IdWorker。因为如果直接new DefaultIdentifierGenerator(),synchronized锁的不是同一个对象。
 # 问题
